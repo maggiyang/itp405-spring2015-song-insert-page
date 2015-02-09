@@ -18,12 +18,16 @@ if(isset($_POST['savebutton'])){
 ?>
 
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>Song Insert</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
     </head>
     
-    <body>
+    
+    <body></body>
         <?php if(isset($_POST['savebutton'])){ ?>
             <p>The song <?php echo $song->getTitle() ?>
             with an ID of <?php echo $song->getId() ?>
@@ -48,5 +52,7 @@ if(isset($_POST['savebutton'])){
             <input type="submit" value="save" name="savebutton">
         </form>
         <?php } ?>
+        
+        <script src="/js/bootstrap.min.js"></script>
     </body>
 </html>
