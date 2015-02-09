@@ -26,8 +26,9 @@ if(isset($_POST['savebutton'])){
     <body>
         <?php if(isset($_POST['savebutton'])){ ?>
             <p>The song <?php echo $song->getTitle() ?>
-   with an ID of <?php echo $song->getId() ?>
-   was inserted successfully!</p>
+            with an ID of <?php echo $song->getId() ?>
+            was inserted successfully!</p>
+            <a href="add-song.php">Return to Add Songs</a>
         <?php }else{ ?>
         <form method="post" name="songinput">
             Title: <input type="text" name="title">
